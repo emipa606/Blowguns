@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Blowgun - Nonlethal -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Dart_Nonlethal</defName>
+    <label>nonlethal dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/Blowdart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Blowdart_Nonlethal</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Blowgun_Nonlethal</defName>
+    <label>blowgun (nonlethal)</label>
+    <description>A simple blowgun, armed with non-lethally toxic darts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Blowgun_1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>10</WoodLog>
+      <SnakeVenom>5</SnakeVenom>
+    </costList>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.2</Mass>
+      <AccuracyTouch>0.89</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRanged</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Dart_Nonlethal</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>18</range>
+        <soundCast>Interact_BeatFire</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+  <!-- Blowgun - Lethal -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Dart_Lethal</defName>
+    <label>lethal dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/Blowdart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Blowdart_Lethal</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Blowgun_Lethal</defName>
+    <label>blowgun (lethal)</label>
+    <description>A simple blowgun, armed with lethaly toxic darts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Blowgun_2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>10</WoodLog>
+      <SnakeVenom>5</SnakeVenom>
+    </costList>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.2</Mass>
+      <AccuracyTouch>0.89</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRanged</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Dart_Lethal</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>18</range>
+        <soundCast>Interact_BeatFire</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

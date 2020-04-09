@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--[Core] <Cobra.label>cobra</Cobra.label>-->
+  <!--[Core] <Cobra.description>A large snake. Cobras can be highly aggressive if provoked - it's better to stay away from these creatures.</Cobra.description>-->
+  <!--[Core] <Cobra_Leather.label>cobraskin</Cobra_Leather.label>-->
+  <!--[Core] <Cobra_Leather.description>cobraskin</Cobra_Leather.description>-->
+  <!--[Core] <Cobra_Leather.stuffProps.stuffAdjective>cobraskin</Cobra_Leather.stuffProps.stuffAdjective>-->
+  <!--[Core] <Cobra_Meat.label>cobraflesh</Cobra_Meat.label>-->
+  <!--[Core] <Cobra_Meat.description>cobraflesh</Cobra_Meat.description>-->
+  <!--[Core] <Cobra_Corpse.label>cobra corpse</Cobra_Corpse.label>-->
+  <!--[Core] <Cobra_Corpse.description>cobra corpse</Cobra_Corpse.description>-->
+
+
+</LanguageData>

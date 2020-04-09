@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>SnakeVenom</defName>
+    <label>snake venom</label>
+    <description>Venom from a snake. Tribals have been known to use its toxic properties for lethal and nonlethal applications.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/SnakeVenom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>400</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>Antivenom</defName>
+    <label>antivenom</label>
+    <description>Capable of relieving the severity of various forms of toxic buildup. Modern medical technology has led to the development of this potent antivenom.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Antivenom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>200</stackLimit>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>0.03</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <SnakeVenom>1</SnakeVenom>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+        <Medicine>3</Medicine>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Antivenom_Dependant</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>9999</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
