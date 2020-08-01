@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Blowguns (Continued)</name>
-  	<packageId>Mlie.Blowguns</packageId>
-	<author>O Negative</author>
-	<url>https://github.com/emipa606/Blowguns</url>
-	<supportedVersions>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies />
-	<loadAfter />
-	<description>Update of O Negatives mod for RimWorld 1.1
+  <name>Blowguns (Continued)</name>
+  <packageId>Mlie.Blowguns</packageId>
+  <author>O Negative</author>
+  <url>https://github.com/emipa606/Blowguns</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>Update of O Negatives mod for RimWorld 1.1
 	
 B18 - maintained by pgoslinga
 https://steamcommunity.com/sharedfiles/filedetails/?id=1812077718
@@ -41,7 +42,7 @@ Original Author: O Negative
 https://ludeon.com/forums/index.php?topic=29966.0
 
 Credits:
-gretino | Translation - Chinese(Simplified)
+gretino: Translation - Chinese(Simplified)
 	
 --- Original Description ---
 With a bit of wood and some snake venom, you'll be able to produce your very own lethal or nonlethal blowdarts in no-time!

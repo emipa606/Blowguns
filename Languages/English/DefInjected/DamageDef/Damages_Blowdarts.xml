@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Blowdart - Nonlethal -->
+
+  <Blowdart_Nonlethal.label>blow dart</Blowdart_Nonlethal.label>
+  <Blowdart_Nonlethal.deathMessage>{0} has been shot to death.</Blowdart_Nonlethal.deathMessage>
+
+
+  <!-- Blowdart - Lethal -->
+
+  <Blowdart_Lethal.label>blow dart</Blowdart_Lethal.label>
+  <Blowdart_Lethal.deathMessage>{0} has been shot to death.</Blowdart_Lethal.deathMessage>
+
+
+</LanguageData>

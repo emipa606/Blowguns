@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Blowgun - Nonlethal -->
-
   <Dart_Nonlethal.label>非致命吹箭</Dart_Nonlethal.label>
-
   <Blowgun_Nonlethal.label>吹箭筒（非致命）</Blowgun_Nonlethal.label>
   <Blowgun_Nonlethal.description>一个简单的吹箭筒，装填了即使最大型的动物也能被其无力化的非致命吹箭。</Blowgun_Nonlethal.description>
-
-
   <!-- Blowgun - Lethal -->
-
   <Dart_Lethal.label>致命吹箭</Dart_Lethal.label>
-
   <Blowgun_Lethal.label>吹箭筒（致命）</Blowgun_Lethal.label>
   <Blowgun_Lethal.description>一个简单的吹箭筒，装填了即使最大型的动物也能杀死的致命吹箭。</Blowgun_Lethal.description>
-
-
 </LanguageData>

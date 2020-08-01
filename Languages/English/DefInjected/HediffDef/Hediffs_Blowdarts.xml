@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Non Lethal -->
+
+  <Nonlethal_Dependant.label>nonlethal affector</Nonlethal_Dependant.label>
+  <Nonlethal_Dependant.description>nonlethal affector</Nonlethal_Dependant.description>
+  <Nonlethal_Dependant.stages.0.label>active</Nonlethal_Dependant.stages.0.label>
+
+
+  <!-- Lethal -->
+
+  <Lethal_Dependant.label>lethal affector</Lethal_Dependant.label>
+  <Lethal_Dependant.description>lethal affector</Lethal_Dependant.description>
+  <Lethal_Dependant.stages.0.label>active</Lethal_Dependant.stages.0.label>
+
+
+  <!-- Antivenom -->
+
+  <Antivenom_Dependant.label>antivenom</Antivenom_Dependant.label>
+  <Antivenom_Dependant.description>antivenom</Antivenom_Dependant.description>
+  <Antivenom_Dependant.stages.0.label>effective</Antivenom_Dependant.stages.0.label>
+
+
+  <!-- Venomous Effects -->
+
+  <ToxicBuildup_Nonlethal.label>toxic buildup - nonlethal</ToxicBuildup_Nonlethal.label>
+  <ToxicBuildup_Nonlethal.description>toxic buildup - nonlethal</ToxicBuildup_Nonlethal.description>
+  <ToxicBuildup_Nonlethal.stages.0.label>initial</ToxicBuildup_Nonlethal.stages.0.label>
+  <ToxicBuildup_Nonlethal.stages.1.label>stage 1</ToxicBuildup_Nonlethal.stages.1.label>
+  <ToxicBuildup_Nonlethal.stages.2.label>stage 1</ToxicBuildup_Nonlethal.stages.2.label>
+  <ToxicBuildup_Nonlethal.stages.3.label>stage 2</ToxicBuildup_Nonlethal.stages.3.label>
+  <ToxicBuildup_Nonlethal.stages.4.label>stage 2</ToxicBuildup_Nonlethal.stages.4.label>
+  <ToxicBuildup_Nonlethal.stages.5.label>stage 2</ToxicBuildup_Nonlethal.stages.5.label>
+  <ToxicBuildup_Nonlethal.stages.6.label>stage 3</ToxicBuildup_Nonlethal.stages.6.label>
+  <ToxicBuildup_Nonlethal.stages.7.label>stage 3</ToxicBuildup_Nonlethal.stages.7.label>
+  <ToxicBuildup_Nonlethal.stages.8.label>stage 3</ToxicBuildup_Nonlethal.stages.8.label>
+
+
+</LanguageData>

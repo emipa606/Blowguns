@@ -1,16 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Blowdart - Nonlethal -->
-
   <Blowdart_Nonlethal.label>吹箭</Blowdart_Nonlethal.label>
   <Blowdart_Nonlethal.deathMessage>{0} 被射死了。</Blowdart_Nonlethal.deathMessage>
-
-
   <!-- Blowdart - Lethal -->
-
   <Blowdart_Lethal.label>吹箭</Blowdart_Lethal.label>
   <Blowdart_Lethal.deathMessage>{0} 被射死了。</Blowdart_Lethal.deathMessage>
-
-
 </LanguageData>
