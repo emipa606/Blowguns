@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Blowgun - Nonlethal -->
-
   <Dart_Nonlethal.label>nonlethal dart</Dart_Nonlethal.label>
-
   <Blowgun_Nonlethal.label>blowgun (nonlethal)</Blowgun_Nonlethal.label>
   <Blowgun_Nonlethal.description>A simple blowgun, armed with non-lethally toxic darts.</Blowgun_Nonlethal.description>
-
-
   <!-- Blowgun - Lethal -->
-
   <Dart_Lethal.label>lethal dart</Dart_Lethal.label>
-
   <Blowgun_Lethal.label>blowgun (lethal)</Blowgun_Lethal.label>
   <Blowgun_Lethal.description>A simple blowgun, armed with lethaly toxic darts.</Blowgun_Lethal.description>
-
-
 </LanguageData>

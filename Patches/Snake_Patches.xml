@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Vanilla -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cobra"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cobra"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cobra"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <!-- Westerado -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Rattlesnake_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Rattlesnake_Westerado"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Rattlesnake_Westerado"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Rattlesnake_Westerado"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <!-- Infectious Creatures -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Adder"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Adder"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Adder"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Adder"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BlackDesertCobra"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="BlackDesertCobra"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BlackDesertCobra"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BlackDesertCobra"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <!-- Vanilla Animals Expanded — Extreme Desert -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AEXP_Rattlesnake"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>
