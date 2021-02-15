@@ -191,4 +191,97 @@
       </nomatch>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CoralSnake"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CoralSnake"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CoralSnake"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Cottonmouth"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cottonmouth"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Cottonmouth"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TimberRattler"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TimberRattler"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TimberRattler"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
 </Patch>
