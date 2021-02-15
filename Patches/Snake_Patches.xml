@@ -159,4 +159,36 @@
       </nomatch>
     </match>
   </Operation>
+  <!-- Legacy Ark -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Copperhead"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="Copperhead"]/comps</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Copperhead"]/comps</xpath>
+        <value>
+          <li Class="CompProperties_Milkable">
+            <milkDef>SnakeVenom</milkDef>
+            <milkIntervalDays>2</milkIntervalDays>
+            <milkAmount>1</milkAmount>
+            <milkFemaleOnly>False</milkFemaleOnly>
+          </li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Copperhead"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Milkable">
+              <milkDef>SnakeVenom</milkDef>
+              <milkIntervalDays>2</milkIntervalDays>
+              <milkAmount>1</milkAmount>
+              <milkFemaleOnly>False</milkFemaleOnly>
+            </li>
+          </comps>
+        </value>
+      </nomatch>
+    </match>
+  </Operation>
 </Patch>
