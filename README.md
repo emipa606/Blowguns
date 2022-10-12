@@ -1,6 +1,6 @@
 # Blowguns
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of O Negatives mod
 	
@@ -20,22 +20,13 @@ https://ludeon.com/forums/index.php?topic=29966.0
 
 
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/Blowguns]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
-With a bit of wood and some snake venom, you&apos;ll be able to produce your very own lethal or nonlethal blowdarts in no-time!
-Getting wood is easy. The trick is getting the snake venom! You&apos;ll have to tame some cobras, and &quot;milk&quot; them for their venom.
+With a bit of wood and some snake venom, you'll be able to produce your very own lethal or nonlethal blowdarts in no-time!
+Getting wood is easy. The trick is getting the snake venom! You'll have to tame some cobras, and "milk" them for their venom.
 Obviously, this is risky business, but the payoff is well worth it.
 
 The blowgun is an incredibly short ranged weapon, that can prove useful or catastrophic for your colonists. It does minimal damage (literally), but applies one of two toxins to the target on-hit.
@@ -48,8 +39,8 @@ The nonlethal variation of the blowgun should only be used to hit a human target
 Results are not immediate, but over time the tranquilizing properties of the dart will cause the target to slowly go temporarily blind and paralyzed.
 The effects can last anywhere from 12 to 16 hours.
 
-The rate and cap of each toxin&apos;s severity is determined by the body size/meat amount of your target, as well as how many darts hit your target.
-You&apos;ll find this information useful if you ever find yourself wanting to tranquilize an elephant or thrumbo.
+The rate and cap of each toxin's severity is determined by the body size/meat amount of your target, as well as how many darts hit your target.
+You'll find this information useful if you ever find yourself wanting to tranquilize an elephant or thrumbo.
 
 NEW - Antivenom
 
@@ -60,8 +51,8 @@ You will want to have a vial or two of this lying around, just in case.
 Production
 
 You can produce blowguns at any weapon production station in the core game.
-Aside from the easily obtained wood you&apos;ll need for the basic &quot;tube&quot; of the blowgun, you&apos;re going to need some venom for the darts.
-Venom can be obtained via &quot;milking&quot; tamed cobras.
+Aside from the easily obtained wood you'll need for the basic "tube" of the blowgun, you're going to need some venom for the darts.
+Venom can be obtained via "milking" tamed cobras.
 
 Antivenom can be produced at a drug lab once medicine production is researched, and you have a colonist with basic familiarity in crafting and medicine.
 
@@ -73,13 +64,13 @@ Both of these weapons are incredibly tactical, even for the simplest AI. And, ye
 Lethal
 Quickly puts victim into a disadvantaged position, which is only exacerbated by multiple hits.
 Multiple consecutive hits are guaranteed to kill, if left neglected.
-HINT: Try not to get hit with a lethal dart if you don&apos;t have some antivenom lying around!
+HINT: Try not to get hit with a lethal dart if you don't have some antivenom lying around!
 
 Nonlethal
 Best used as a hit-and-run weapon.
 Great for bringing down large/dangerous animals and other beasts.
 Be careful when using it on quick predators, such as the panther.
-Also useful in ending the mental breaks of colonists you don&apos;t want to risk permanently damaging.
+Also useful in ending the mental breaks of colonists you don't want to risk permanently damaging.
 Just remember the effects are not instant.
 
 Toxic Fallout
@@ -92,7 +83,7 @@ Further investment of time and resources into crafting antivenom will prove even
 
 Feedback
 The textures are rough, and I apologize for that.
-Make sure to leave feedback, though! I know the mod isn&apos;t perfect, and probably never will be.
+Make sure to leave feedback, though! I know the mod isn't perfect, and probably never will be.
 I am, however, always interested in ways to improve upon my work.
 
 # pgoslingas Description
@@ -104,8 +95,8 @@ C# class library and XML definitions now compatible version 18 RimWorld.
 Production
 
 You can produce blowguns at any weapon production station in the core game.
-Aside from the easily obtained wood you&apos;ll need for the basic &quot;tube&quot; of the blowgun, you&apos;re going to need some venom for the darts.
-Venom can be obtained via &quot;milking&quot; tamed cobras.
+Aside from the easily obtained wood you'll need for the basic "tube" of the blowgun, you're going to need some venom for the darts.
+Venom can be obtained via "milking" tamed cobras.
 
 Antivenom can be produced at a drug lab once medicine production is researched, and you have a colonist with basic familiarity in crafting and medicine.
 
@@ -116,7 +107,7 @@ Credits:
 gretino 
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -126,5 +117,7 @@ gretino
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
+
 
 
