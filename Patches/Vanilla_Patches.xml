@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffGiverSetDef[defName="OrganicStandard"]/hediffGivers</xpath>
+    <value>
+      <!-- Nonlethal -->
+      <li Class="Blowguns.HediffGiver_ProgessiveBodySizeDependant">
+        <hediff>ToxicBuildup_Nonlethal</hediff>
+        <dependantHediffDef>Nonlethal_Dependant</dependantHediffDef>
+        <partToAffect>Body</partToAffect>
+        <severityPerSeverityPerDay>2.0</severityPerSeverityPerDay>
+        <minSeverityFactor>0.00</minSeverityFactor>
+        <maxSeverityFactor>1.34</maxSeverityFactor>
+        <severityPerDayRecovering>-1.0</severityPerDayRecovering>
+      </li>
+      <!-- Lethal -->
+      <li Class="Blowguns.HediffGiver_ProgessiveBodySizeDependant">
+        <hediff>ToxicBuildup</hediff>
+        <dependantHediffDef>Lethal_Dependant</dependantHediffDef>
+        <partToAffect>Body</partToAffect>
+        <severityPerSeverityPerDay>0.30</severityPerSeverityPerDay>
+        <minSeverityFactor>0.00</minSeverityFactor>
+        <maxSeverityFactor>1.143</maxSeverityFactor>
+        <severityPerDayRecovering>0.00</severityPerDayRecovering>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,5 +1,8 @@
 # Changelog for Blowguns
 
+1.4.2 - Replaced HediffGiverDef overwrite with a patch, thanks Kaedys
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests
 
 
