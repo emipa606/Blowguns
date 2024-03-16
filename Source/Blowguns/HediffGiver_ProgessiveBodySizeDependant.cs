@@ -4,17 +4,16 @@ namespace Blowguns;
 
 public class HediffGiver_ProgessiveBodySizeDependant : HediffGiver
 {
+    public readonly float maxSeverityFactor = 1f;
+
+    public readonly float minSeverityFactor = 0f;
+
+    public readonly float severityPerDayRecovering = -1f;
+
+    public readonly float severityPerSeverityPerDay = 1f;
     public string dependantHediffDef;
 
-    public float maxSeverityFactor = 1f;
-
-    public float minSeverityFactor = 0f;
-
     public string partToAffect;
-
-    public float severityPerDayRecovering = -1f;
-
-    public float severityPerSeverityPerDay = 1f;
 
     public override void OnIntervalPassed(Pawn pawn, Hediff cause)
     {
@@ -27,8 +26,8 @@ public class HediffGiver_ProgessiveBodySizeDependant : HediffGiver
             var severity = firstHediffOfDef.Severity;
             var bodySize = pawn.BodySize;
             var sevOffset2 = severity * num / bodySize;
-            var num2 = minSeverityFactor * bodySize;
-            var num3 = maxSeverityFactor * firstHediffOfDef.Severity / bodySize;
+            var minSeverity = minSeverityFactor * bodySize;
+            var maxSeverity = maxSeverityFactor * firstHediffOfDef.Severity / bodySize;
             if (!pawn.Dead && hediffSet.HasHediff(HediffDef.Named(dependantHediffDef)) &&
                 !hediffSet.HasHediff(hediff))
             {
@@ -43,7 +42,7 @@ public class HediffGiver_ProgessiveBodySizeDependant : HediffGiver
                 }
 
                 var firstHediffOfDef2 = hediffSet.GetFirstHediffOfDef(hediff);
-                if (firstHediffOfDef.Severity > num2 && firstHediffOfDef2.Severity <= num3)
+                if (firstHediffOfDef.Severity > minSeverity && firstHediffOfDef2.Severity <= maxSeverity)
                 {
                     HealthUtility_ProgessiveBodySizeDependant.AdjustSeverityPerSeverity(pawn, hediff,
                         sevOffset2, partToAffect);
