@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: antivenom -->
+  <Antivenom.label>antivenom</Antivenom.label>
+  <!-- EN: Capable of relieving the severity of various forms of toxic buildup. Modern medical technology has led to the development of this potent antivenom. -->
+  <Antivenom.description>Capable of relieving the severity of various forms of toxic buildup. Modern medical technology has led to the development of this potent antivenom.</Antivenom.description>
+  <!-- EN: Drink {0} -->
+  <Antivenom.ingestible.ingestCommandString>Drink {0}</Antivenom.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <Antivenom.ingestible.ingestReportString>Drinking {0}.</Antivenom.ingestible.ingestReportString>
+  <!-- EN: snake venom -->
+  <SnakeVenom.label>snake venom</SnakeVenom.label>
+  <!-- EN: Venom from a snake. Tribals have been known to use its toxic properties for lethal and nonlethal applications. -->
+  <SnakeVenom.description>Venom from a snake. Tribals have been known to use its toxic properties for lethal and nonlethal applications.</SnakeVenom.description>
+</LanguageData>

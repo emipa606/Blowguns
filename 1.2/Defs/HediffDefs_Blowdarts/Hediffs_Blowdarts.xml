@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=== Dependant Hediffs ===-->
+  <!-- Non Lethal -->
+  <HediffDef>
+    <defName>Nonlethal_Dependant</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <label>nonlethal affector</label>
+    <description>nonlethal affector</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>25000</min>
+          <max>30000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Lethal -->
+  <HediffDef>
+    <defName>Lethal_Dependant</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <label>lethal affector</label>
+    <description>lethal affector</description>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable">
+        <immunityPerDayNotSick>-24.0</immunityPerDayNotSick>
+        <immunityPerDaySick>2.12</immunityPerDaySick>
+        <severityPerDayNotImmune>0.00</severityPerDayNotImmune>
+        <severityPerDayImmune>-24.00</severityPerDayImmune>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>active</label>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Antivenom -->
+  <HediffDef>
+    <defName>Antivenom_Dependant</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <label>antivenom</label>
+    <description>antivenom</description>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>60000</min>
+          <max>60000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>effective</label>
+        <hediffGivers>
+          <!--== Dependants ==-->
+          <!-- Nonlethal -->
+          <li Class="Blowguns.HediffGiver_ProgessiveBodySizeDependant">
+            <hediff>Nonlethal_Dependant</hediff>
+            <dependantHediffDef>Antivenom_Dependant</dependantHediffDef>
+            <partToAffect>Body</partToAffect>
+            <severityPerSeverityPerDay>-24.0</severityPerSeverityPerDay>
+            <minSeverityFactor>0.00</minSeverityFactor>
+            <maxSeverityFactor>100.00</maxSeverityFactor>
+            <severityPerDayRecovering>0.00</severityPerDayRecovering>
+          </li>
+          <!-- Lethal -->
+          <li Class="Blowguns.HediffGiver_ProgessiveBodySizeDependant">
+            <hediff>Lethal_Dependant</hediff>
+            <dependantHediffDef>Antivenom_Dependant</dependantHediffDef>
+            <partToAffect>Body</partToAffect>
+            <severityPerSeverityPerDay>-12.0</severityPerSeverityPerDay>
+            <minSeverityFactor>0.00</minSeverityFactor>
+            <maxSeverityFactor>100.00</maxSeverityFactor>
+            <severityPerDayRecovering>0.00</severityPerDayRecovering>
+          </li>
+          <!--== Independants ==-->
+          <li Class="Blowguns.HediffGiver_ProgessiveBodySizeDependant">
+            <hediff>ToxicBuildup</hediff>
+            <dependantHediffDef>Antivenom_Dependant</dependantHediffDef>
+            <partToAffect>Body</partToAffect>
+            <severityPerSeverityPerDay>-0.08</severityPerSeverityPerDay>
+            <minSeverityFactor>0.00</minSeverityFactor>
+            <maxSeverityFactor>100.00</maxSeverityFactor>
+            <severityPerDayRecovering>0.00</severityPerDayRecovering>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Venomous Effects -->
+  <HediffDef>
+    <defName>ToxicBuildup_Nonlethal</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <label>toxic buildup - nonlethal</label>
+    <description>toxic buildup - nonlethal</description>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <label>initial</label>
+      </li>
+      <!-- Stage 1 -->
+      <li>
+        <label>stage 1</label>
+        <minSeverity>0.05</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.95</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>stage 1</label>
+        <minSeverity>0.15</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.85</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- Stage 2 -->
+      <li>
+        <label>stage 2</label>
+        <minSeverity>0.25</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.75</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.95</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>stage 2</label>
+        <minSeverity>0.35</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.65</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.75</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>stage 2</label>
+        <minSeverity>0.45</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.55</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.55</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- Stage 3 -->
+      <li>
+        <label>stage 3</label>
+        <minSeverity>0.60</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.40</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.40</setMax>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0.60</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>stage 3</label>
+        <minSeverity>0.80</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.20</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.20</setMax>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0.40</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>stage 3</label>
+        <minSeverity>1.00</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0.00</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

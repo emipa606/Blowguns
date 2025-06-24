@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: antivenom -->
+  <Antivenom_Dependant.label>antivenom</Antivenom_Dependant.label>
+  <!-- EN: antivenom -->
+  <Antivenom_Dependant.description>antivenom</Antivenom_Dependant.description>
+  <!-- EN: effective -->
+  <Antivenom_Dependant.stages.effective.label>effective</Antivenom_Dependant.stages.effective.label>
+  <!-- EN: lethal affector -->
+  <Lethal_Dependant.label>lethal affector</Lethal_Dependant.label>
+  <!-- EN: lethal affector -->
+  <Lethal_Dependant.description>lethal affector</Lethal_Dependant.description>
+  <!-- EN: active -->
+  <Lethal_Dependant.stages.active.label>active</Lethal_Dependant.stages.active.label>
+  <!-- EN: nonlethal affector -->
+  <Nonlethal_Dependant.label>nonlethal affector</Nonlethal_Dependant.label>
+  <!-- EN: nonlethal affector -->
+  <Nonlethal_Dependant.description>nonlethal affector</Nonlethal_Dependant.description>
+  <!-- EN: active -->
+  <Nonlethal_Dependant.stages.active.label>active</Nonlethal_Dependant.stages.active.label>
+  <!-- EN: toxic buildup - nonlethal -->
+  <ToxicBuildup_Nonlethal.label>toxic buildup - nonlethal</ToxicBuildup_Nonlethal.label>
+  <!-- EN: toxic buildup - nonlethal -->
+  <ToxicBuildup_Nonlethal.description>toxic buildup - nonlethal</ToxicBuildup_Nonlethal.description>
+  <!-- EN: initial -->
+  <ToxicBuildup_Nonlethal.stages.initial.label>initial</ToxicBuildup_Nonlethal.stages.initial.label>
+  <!-- EN: stage 1 -->
+  <ToxicBuildup_Nonlethal.stages.stage_1-0.label>stage 1</ToxicBuildup_Nonlethal.stages.stage_1-0.label>
+  <!-- EN: stage 1 -->
+  <ToxicBuildup_Nonlethal.stages.stage_1-1.label>stage 1</ToxicBuildup_Nonlethal.stages.stage_1-1.label>
+  <!-- EN: stage 2 -->
+  <ToxicBuildup_Nonlethal.stages.stage_2-0.label>stage 2</ToxicBuildup_Nonlethal.stages.stage_2-0.label>
+  <!-- EN: stage 2 -->
+  <ToxicBuildup_Nonlethal.stages.stage_2-1.label>stage 2</ToxicBuildup_Nonlethal.stages.stage_2-1.label>
+  <!-- EN: stage 2 -->
+  <ToxicBuildup_Nonlethal.stages.stage_2-2.label>stage 2</ToxicBuildup_Nonlethal.stages.stage_2-2.label>
+  <!-- EN: stage 3 -->
+  <ToxicBuildup_Nonlethal.stages.stage_3-0.label>stage 3</ToxicBuildup_Nonlethal.stages.stage_3-0.label>
+  <!-- EN: stage 3 -->
+  <ToxicBuildup_Nonlethal.stages.stage_3-1.label>stage 3</ToxicBuildup_Nonlethal.stages.stage_3-1.label>
+  <!-- EN: stage 3 -->
+  <ToxicBuildup_Nonlethal.stages.stage_3-2.label>stage 3</ToxicBuildup_Nonlethal.stages.stage_3-2.label>
+</LanguageData>

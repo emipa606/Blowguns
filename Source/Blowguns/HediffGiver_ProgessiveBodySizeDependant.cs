@@ -4,13 +4,13 @@ namespace Blowguns;
 
 public class HediffGiver_ProgessiveBodySizeDependant : HediffGiver
 {
-    public readonly float maxSeverityFactor = 1f;
+    private readonly float maxSeverityFactor = 1f;
 
-    public readonly float minSeverityFactor = 0f;
+    private readonly float minSeverityFactor = 0f;
 
-    public readonly float severityPerDayRecovering = -1f;
+    private readonly float severityPerDayRecovering = -1f;
 
-    public readonly float severityPerSeverityPerDay = 1f;
+    private readonly float severityPerSeverityPerDay = 1f;
     public string dependantHediffDef;
 
     public string partToAffect;

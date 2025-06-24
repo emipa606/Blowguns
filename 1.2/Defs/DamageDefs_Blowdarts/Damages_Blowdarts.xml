@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+  <!-- Blowdart - Nonlethal -->
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>Blowdart_Nonlethal</defName>
+    <label>blow dart</label>
+    <makesBlood>false</makesBlood>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <externalViolence>false</externalViolence>
+    <additionalHediffs>
+      <li>
+        <hediff>Nonlethal_Dependant</hediff>
+        <severityPerDamageDealt>1.00</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+  <!-- Blowdart - Lethal -->
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>Blowdart_Lethal</defName>
+    <label>blow dart</label>
+    <makesBlood>false</makesBlood>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <externalViolence>false</externalViolence>
+    <additionalHediffs>
+      <li>
+        <hediff>Lethal_Dependant</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+  </DamageDef>
+</Defs>

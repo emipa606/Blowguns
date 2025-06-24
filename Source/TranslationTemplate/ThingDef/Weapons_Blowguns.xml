@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: blowgun (lethal) -->
+  <Blowgun_Lethal.label>blowgun (lethal)</Blowgun_Lethal.label>
+  <!-- EN: A simple blowgun, armed with lethaly toxic darts. -->
+  <Blowgun_Lethal.description>A simple blowgun, armed with lethaly toxic darts.</Blowgun_Lethal.description>
+  <!-- EN: blowgun (lethal) -->
+  <Blowgun_Lethal.verbs.Verb_Shoot.label>blowgun (lethal)</Blowgun_Lethal.verbs.Verb_Shoot.label>
+  <!-- EN: blowgun (nonlethal) -->
+  <Blowgun_Nonlethal.label>blowgun (nonlethal)</Blowgun_Nonlethal.label>
+  <!-- EN: A simple blowgun, armed with non-lethally toxic darts. -->
+  <Blowgun_Nonlethal.description>A simple blowgun, armed with non-lethally toxic darts.</Blowgun_Nonlethal.description>
+  <!-- EN: blowgun (nonlethal) -->
+  <Blowgun_Nonlethal.verbs.Verb_Shoot.label>blowgun (nonlethal)</Blowgun_Nonlethal.verbs.Verb_Shoot.label>
+  <!-- EN: lethal dart -->
+  <Dart_Lethal.label>lethal dart</Dart_Lethal.label>
+  <!-- EN: nonlethal dart -->
+  <Dart_Nonlethal.label>nonlethal dart</Dart_Nonlethal.label>
+</LanguageData>

@@ -15,19 +15,18 @@ internal class HealthUtility_ProgessiveBodySizeDependant
         if (hediff != null)
         {
             hediff.Severity += sevOffset;
+            return;
         }
-        else
-        {
-            if (!(sevOffset > 0f))
-            {
-                return;
-            }
 
-            hediff = HediffMaker.MakeHediff(hdDef, pawn);
-            hediff.Severity = sevOffset;
-            pawn.health.AddHediff(hediff,
-                pawn.RaceProps.body.AllParts.Find(x =>
-                    x.def == DefDatabase<BodyPartDef>.GetNamed(partToAffect)));
+        if (!(sevOffset > 0f))
+        {
+            return;
         }
+
+        hediff = HediffMaker.MakeHediff(hdDef, pawn);
+        hediff.Severity = sevOffset;
+        pawn.health.AddHediff(hediff,
+            pawn.RaceProps.body.AllParts.Find(x =>
+                x.def == DefDatabase<BodyPartDef>.GetNamed(partToAffect)));
     }
 }
